@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+}
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+@import 'assets/theme/dark-theme';
+@import 'assets/theme/light-theme';
+@import 'assets/theme/common';
+
+.dark-theme{
+    @include angular-material-theme($dark-theme);
+    @include globalDesign($dark-theme);
+}
+.light-theme{
+    @include angular-material-theme($light-theme);
+    @include globalDesign($light-theme);
+}

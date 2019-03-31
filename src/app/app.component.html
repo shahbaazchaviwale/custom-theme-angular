@@ -1,0 +1,47 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div [ngClass]="theme">
+<mat-toolbar class="toolbar">
+    <ul class="title-section">
+        <li class="title-icon" (click)="toggleMenu(menuStatus)">
+            <i class="material-icons">
+                menu
+            </i>
+        </li>
+        <li class="title-name">
+            Project Title
+        </li>
+    </ul>
+    
+    
+    <i class="material-icons theme-icon" (click)="themeChange(theme)">
+        brightness_medium
+    </i>
+  
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+    <mat-sidenav mode="side" opened [ngStyle]="menuOpen">
+        <ul class="left-nav">
+            <li (click)="toggleMenu(menuStatus)">
+                <i class="material-icons">
+                     g_translate
+                </i>
+                <ul class="left-nested-menu-tree">
+                    <li class="left-nested-title">Langauge</li>
+                    <li>Langauge-1</li>
+                    <li>Langauge-1</li>
+                </ul>
+            </li>
+        </ul>
+        
+    </mat-sidenav>
+    
+
+    <mat-sidenav-content [ngStyle]="mainContent">
+        Main content asdasd
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+</div>
+
