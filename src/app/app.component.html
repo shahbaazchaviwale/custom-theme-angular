@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div [ngClass]="theme">
-<mat-toolbar class="toolbar">
+<!-- <mat-toolbar class="toolbar">
     <ul class="title-section">
         <li class="title-icon" (click)="toggleMenu(menuStatus)">
             <i class="material-icons">
@@ -13,12 +13,26 @@
     </ul>
     
     
-    <i class="material-icons theme-icon" (click)="themeChange(theme)">
-        brightness_medium
-    </i>
+    
   
-</mat-toolbar>
+</mat-toolbar> -->
+<mat-toolbar color="primary">
+    <span (click)="toggleMenu(menuStatus)">
+         <i class="material-icons">
+                menu
+        </i>
+        </span>
+    <span>Application </span>
 
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+    <app-date-selection></app-date-selection>
+    <span>
+        <i class="material-icons" (click)="themeChange(theme)">
+            brightness_medium
+        </i>
+    </span>
+</mat-toolbar>
 <mat-sidenav-container>
 
     <mat-sidenav mode="side" opened [ngStyle]="menuOpen">

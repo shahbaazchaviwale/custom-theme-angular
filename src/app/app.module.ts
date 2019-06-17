@@ -10,10 +10,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/';
 import { MatIconModule } from '@angular/material/icon';
-
+import { DateSelectionComponent } from './date-selection/date-selection.component';
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DateSelectionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -21,7 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

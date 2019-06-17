@@ -1,0 +1,12 @@
+<div class="date-selection">
+<span>
+{{group.value}}
+</span>
+  <mat-button-toggle-group #group="matButtonToggleGroup" value="01/01/2019 - 07/01/2019" 
+    name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="02/02/2019">1 day</mat-button-toggle>
+    <mat-button-toggle value="01/01/2019 - 07/01/2019">7 days</mat-button-toggle>
+    <mat-button-toggle value="01/01/2019 - 02/02/2019">31 days</mat-button-toggle>
+    <mat-button-toggle value="04/04/2019 - 07/05/2019">custom</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
